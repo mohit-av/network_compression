@@ -1,0 +1,751 @@
+{
+  "format": "graph-model",
+  "generatedBy": "2.11.0",
+  "convertedBy": "TensorFlow.js Converter v4.1.0",
+  "signature": {
+    "inputs": {
+      "input_2": {
+        "name": "input_2:0",
+        "dtype": "DT_FLOAT",
+        "tensorShape": { "dim": [{ "size": "-1" }, { "size": "2" }] }
+      }
+    },
+    "outputs": {
+      "tf.math.sigmoid": {
+        "name": "Identity:0",
+        "dtype": "DT_FLOAT",
+        "tensorShape": { "dim": [{ "size": "-1" }, { "size": "3" }] }
+      }
+    }
+  },
+  "modelTopology": {
+    "node": [
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense/mul/x",
+        "op": "Const",
+        "attr": {
+          "value": { "tensor": { "dtype": "DT_FLOAT", "tensorShape": {} } },
+          "dtype": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "unknown_8",
+        "op": "Const",
+        "attr": {
+          "value": { "tensor": { "dtype": "DT_FLOAT", "tensorShape": {} } },
+          "dtype": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "unknown_7",
+        "op": "Const",
+        "attr": {
+          "value": { "tensor": { "dtype": "DT_FLOAT", "tensorShape": {} } },
+          "dtype": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "unknown_6",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": { "tensor": { "dtype": "DT_FLOAT", "tensorShape": {} } }
+        }
+      },
+      {
+        "name": "unknown_5",
+        "op": "Const",
+        "attr": {
+          "value": { "tensor": { "dtype": "DT_FLOAT", "tensorShape": {} } },
+          "dtype": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "unknown_4",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": { "tensor": { "dtype": "DT_FLOAT", "tensorShape": {} } }
+        }
+      },
+      {
+        "name": "unknown_3",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": { "tensor": { "dtype": "DT_FLOAT", "tensorShape": {} } }
+        }
+      },
+      {
+        "name": "unknown_2",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": { "tensor": { "dtype": "DT_FLOAT", "tensorShape": {} } }
+        }
+      },
+      {
+        "name": "unknown_1",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": { "tensor": { "dtype": "DT_FLOAT", "tensorShape": {} } }
+        }
+      },
+      {
+        "name": "unknown_0",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": { "tensor": { "dtype": "DT_FLOAT", "tensorShape": {} } }
+        }
+      },
+      {
+        "name": "unknown",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": { "tensor": { "dtype": "DT_FLOAT", "tensorShape": {} } }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.concat/concat/axis",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_INT32" },
+          "value": { "tensor": { "dtype": "DT_INT32", "tensorShape": {} } }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense/MatMul/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": { "dim": [{ "size": "42" }, { "size": "256" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense/BiasAdd/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": { "dim": [{ "size": "256" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_2/MatMul/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": { "dim": [{ "size": "256" }, { "size": "256" }] }
+            }
+          },
+          "dtype": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_2/BiasAdd/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": { "dim": [{ "size": "256" }] }
+            }
+          },
+          "dtype": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_3/MatMul/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": { "dim": [{ "size": "256" }, { "size": "256" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_3/BiasAdd/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": { "dim": [{ "size": "256" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_4/MatMul/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": { "dim": [{ "size": "256" }, { "size": "256" }] }
+            }
+          },
+          "dtype": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_4/BiasAdd/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": { "dim": [{ "size": "256" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_1/MatMul/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": { "dim": [{ "size": "256" }, { "size": "3" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_1/BiasAdd/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": { "dim": [{ "size": "3" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "input_2",
+        "op": "Placeholder",
+        "attr": {
+          "shape": { "shape": { "dim": [{ "size": "-1" }, { "size": "2" }] } },
+          "dtype": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_8"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_1/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_8"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_2/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_7"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_3/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_7"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_4/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_6"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_5/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_6"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_6/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_5"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_7/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_5"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_8/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_4"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_9/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_4"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_10/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_3"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_11/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_3"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_12/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_2"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_13/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_2"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_14/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_1"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_15/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_1"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_16/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_0"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_17/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown_0"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_18/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.multiply_19/Mul",
+        "op": "Mul",
+        "input": ["input_2", "unknown"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.sin/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.cos/Cos",
+        "op": "Cos",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_1/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.sin_1/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_2/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.cos_1/Cos",
+        "op": "Cos",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_3/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.sin_2/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_4/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.cos_2/Cos",
+        "op": "Cos",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_5/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.sin_3/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_6/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.cos_3/Cos",
+        "op": "Cos",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_7/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.sin_4/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_8/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.cos_4/Cos",
+        "op": "Cos",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_9/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.sin_5/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_10/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.cos_5/Cos",
+        "op": "Cos",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_11/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.sin_6/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_12/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.cos_6/Cos",
+        "op": "Cos",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_13/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.sin_7/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_14/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.cos_7/Cos",
+        "op": "Cos",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_15/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.sin_8/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_16/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.cos_8/Cos",
+        "op": "Cos",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_17/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.sin_9/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_18/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.cos_9/Cos",
+        "op": "Cos",
+        "input": ["StatefulPartitionedCall/model/tf.math.multiply_19/Mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.concat/concat",
+        "op": "ConcatV2",
+        "input": [
+          "input_2",
+          "StatefulPartitionedCall/model/tf.math.sin/Sin",
+          "StatefulPartitionedCall/model/tf.math.cos/Cos",
+          "StatefulPartitionedCall/model/tf.math.sin_1/Sin",
+          "StatefulPartitionedCall/model/tf.math.cos_1/Cos",
+          "StatefulPartitionedCall/model/tf.math.sin_2/Sin",
+          "StatefulPartitionedCall/model/tf.math.cos_2/Cos",
+          "StatefulPartitionedCall/model/tf.math.sin_3/Sin",
+          "StatefulPartitionedCall/model/tf.math.cos_3/Cos",
+          "StatefulPartitionedCall/model/tf.math.sin_4/Sin",
+          "StatefulPartitionedCall/model/tf.math.cos_4/Cos",
+          "StatefulPartitionedCall/model/tf.math.sin_5/Sin",
+          "StatefulPartitionedCall/model/tf.math.cos_5/Cos",
+          "StatefulPartitionedCall/model/tf.math.sin_6/Sin",
+          "StatefulPartitionedCall/model/tf.math.cos_6/Cos",
+          "StatefulPartitionedCall/model/tf.math.sin_7/Sin",
+          "StatefulPartitionedCall/model/tf.math.cos_7/Cos",
+          "StatefulPartitionedCall/model/tf.math.sin_8/Sin",
+          "StatefulPartitionedCall/model/tf.math.cos_8/Cos",
+          "StatefulPartitionedCall/model/tf.math.sin_9/Sin",
+          "StatefulPartitionedCall/model/tf.math.cos_9/Cos",
+          "StatefulPartitionedCall/model/tf.concat/concat/axis"
+        ],
+        "attr": {
+          "N": { "i": "21" },
+          "T": { "type": "DT_FLOAT" },
+          "Tidx": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense/BiasAdd",
+        "op": "_FusedMatMul",
+        "input": [
+          "StatefulPartitionedCall/model/tf.concat/concat",
+          "StatefulPartitionedCall/model/sequential_1/dense/MatMul/ReadVariableOp",
+          "StatefulPartitionedCall/model/sequential_1/dense/BiasAdd/ReadVariableOp"
+        ],
+        "device": "/device:CPU:0",
+        "attr": {
+          "transpose_b": { "b": false },
+          "transpose_a": { "b": false },
+          "num_args": { "i": "1" },
+          "fused_ops": { "list": { "s": ["Qmlhc0FkZA=="] } },
+          "T": { "type": "DT_FLOAT" },
+          "leakyrelu_alpha": { "f": 0.2 },
+          "epsilon": { "f": 0.0 }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense/mul",
+        "op": "Mul",
+        "input": [
+          "StatefulPartitionedCall/model/sequential_1/dense/mul/x",
+          "StatefulPartitionedCall/model/sequential_1/dense/BiasAdd"
+        ],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/sequential_1/dense/mul"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_2/BiasAdd",
+        "op": "_FusedMatMul",
+        "input": [
+          "StatefulPartitionedCall/model/sequential_1/dense/Sin",
+          "StatefulPartitionedCall/model/sequential_1/dense_2/MatMul/ReadVariableOp",
+          "StatefulPartitionedCall/model/sequential_1/dense_2/BiasAdd/ReadVariableOp"
+        ],
+        "device": "/device:CPU:0",
+        "attr": {
+          "T": { "type": "DT_FLOAT" },
+          "fused_ops": { "list": { "s": ["Qmlhc0FkZA=="] } },
+          "leakyrelu_alpha": { "f": 0.2 },
+          "num_args": { "i": "1" },
+          "epsilon": { "f": 0.0 },
+          "transpose_a": { "b": false },
+          "transpose_b": { "b": false }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_2/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/sequential_1/dense_2/BiasAdd"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_3/BiasAdd",
+        "op": "_FusedMatMul",
+        "input": [
+          "StatefulPartitionedCall/model/sequential_1/dense_2/Sin",
+          "StatefulPartitionedCall/model/sequential_1/dense_3/MatMul/ReadVariableOp",
+          "StatefulPartitionedCall/model/sequential_1/dense_3/BiasAdd/ReadVariableOp"
+        ],
+        "device": "/device:CPU:0",
+        "attr": {
+          "leakyrelu_alpha": { "f": 0.2 },
+          "transpose_b": { "b": false },
+          "fused_ops": { "list": { "s": ["Qmlhc0FkZA=="] } },
+          "num_args": { "i": "1" },
+          "epsilon": { "f": 0.0 },
+          "T": { "type": "DT_FLOAT" },
+          "transpose_a": { "b": false }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_3/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/sequential_1/dense_3/BiasAdd"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_4/BiasAdd",
+        "op": "_FusedMatMul",
+        "input": [
+          "StatefulPartitionedCall/model/sequential_1/dense_3/Sin",
+          "StatefulPartitionedCall/model/sequential_1/dense_4/MatMul/ReadVariableOp",
+          "StatefulPartitionedCall/model/sequential_1/dense_4/BiasAdd/ReadVariableOp"
+        ],
+        "device": "/device:CPU:0",
+        "attr": {
+          "transpose_b": { "b": false },
+          "epsilon": { "f": 0.0 },
+          "leakyrelu_alpha": { "f": 0.2 },
+          "T": { "type": "DT_FLOAT" },
+          "num_args": { "i": "1" },
+          "transpose_a": { "b": false },
+          "fused_ops": { "list": { "s": ["Qmlhc0FkZA=="] } }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_4/Sin",
+        "op": "Sin",
+        "input": ["StatefulPartitionedCall/model/sequential_1/dense_4/BiasAdd"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/sequential_1/dense_1/BiasAdd",
+        "op": "_FusedMatMul",
+        "input": [
+          "StatefulPartitionedCall/model/sequential_1/dense_4/Sin",
+          "StatefulPartitionedCall/model/sequential_1/dense_1/MatMul/ReadVariableOp",
+          "StatefulPartitionedCall/model/sequential_1/dense_1/BiasAdd/ReadVariableOp"
+        ],
+        "device": "/device:CPU:0",
+        "attr": {
+          "epsilon": { "f": 0.0 },
+          "transpose_a": { "b": false },
+          "leakyrelu_alpha": { "f": 0.2 },
+          "transpose_b": { "b": false },
+          "T": { "type": "DT_FLOAT" },
+          "fused_ops": { "list": { "s": ["Qmlhc0FkZA=="] } },
+          "num_args": { "i": "1" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/model/tf.math.sigmoid/Sigmoid",
+        "op": "Sigmoid",
+        "input": ["StatefulPartitionedCall/model/sequential_1/dense_1/BiasAdd"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      },
+      {
+        "name": "Identity",
+        "op": "Identity",
+        "input": ["StatefulPartitionedCall/model/tf.math.sigmoid/Sigmoid"],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      }
+    ],
+    "library": {},
+    "versions": { "producer": 1286 }
+  },
+  "weightsManifest": [
+    {
+      "paths": ["group1-shard1of1.bin"],
+      "weights": [
+        {
+          "name": "StatefulPartitionedCall/model/sequential_1/dense/mul/x",
+          "shape": [],
+          "dtype": "float32"
+        },
+        { "name": "unknown_8", "shape": [], "dtype": "float32" },
+        { "name": "unknown_7", "shape": [], "dtype": "float32" },
+        { "name": "unknown_6", "shape": [], "dtype": "float32" },
+        { "name": "unknown_5", "shape": [], "dtype": "float32" },
+        { "name": "unknown_4", "shape": [], "dtype": "float32" },
+        { "name": "unknown_3", "shape": [], "dtype": "float32" },
+        { "name": "unknown_2", "shape": [], "dtype": "float32" },
+        { "name": "unknown_1", "shape": [], "dtype": "float32" },
+        { "name": "unknown_0", "shape": [], "dtype": "float32" },
+        { "name": "unknown", "shape": [], "dtype": "float32" },
+        {
+          "name": "StatefulPartitionedCall/model/tf.concat/concat/axis",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/model/sequential_1/dense/MatMul/ReadVariableOp",
+          "shape": [42, 256],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/model/sequential_1/dense/BiasAdd/ReadVariableOp",
+          "shape": [256],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/model/sequential_1/dense_2/MatMul/ReadVariableOp",
+          "shape": [256, 256],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/model/sequential_1/dense_2/BiasAdd/ReadVariableOp",
+          "shape": [256],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/model/sequential_1/dense_3/MatMul/ReadVariableOp",
+          "shape": [256, 256],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/model/sequential_1/dense_3/BiasAdd/ReadVariableOp",
+          "shape": [256],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/model/sequential_1/dense_4/MatMul/ReadVariableOp",
+          "shape": [256, 256],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/model/sequential_1/dense_4/BiasAdd/ReadVariableOp",
+          "shape": [256],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/model/sequential_1/dense_1/MatMul/ReadVariableOp",
+          "shape": [256, 3],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/model/sequential_1/dense_1/BiasAdd/ReadVariableOp",
+          "shape": [3],
+          "dtype": "float32"
+        }
+      ]
+    }
+  ]
+}
